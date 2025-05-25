@@ -21,8 +21,8 @@ conda activate yolov5_env
 ## Установка зависимостей:
 ```bash
 pip install -r requirements.txt
-Клонирование репозитория YOLOv5:
 ```
+Клонирование репозитория YOLOv5:
 ```bash
 git clone https://github.com/ultralytics/yolov5
 cd yolov5
@@ -39,6 +39,8 @@ cd yolov5
 
 ```bash
 python train.py --img 1024 --batch 8 --epochs 15 --data data.yaml --weights yolov5s.pt --name piket_model --device 0
+```
+
 --img 1024: размер входных изображений.
 
 --batch 8: размер батча.
@@ -52,7 +54,6 @@ python train.py --img 1024 --batch 8 --epochs 15 --data data.yaml --weights yolo
 --name piket_model: имя для сохранения результатов обучения.
 
 --device 0: использование первого доступного GPU.
-```
 
 ## 🧪 Результаты
 - Модель успешно детектирует пикетные столбики на новых изображениях.
